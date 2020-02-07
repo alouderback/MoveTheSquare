@@ -17,7 +17,12 @@ import edu.ycp.cs320.movethesquare.model.Game;
 import edu.ycp.cs320.movethesquare.model.Square;
 
 public class GameView extends JPanel {
-	private static final Color DARK_GREEN = new Color(1, 50, 32);
+
+
+
+	///ihoffmann changed the background color and opacity
+	private static final Color MIDNIGHT_BLUE = new Color(65, 2, 72,50);
+
 	
 	private Game model;
 	private GameController controller;
@@ -70,7 +75,7 @@ public class GameView extends JPanel {
 
 		Square square = model.getSquare();
 		
-		g.fillRect((int) square.getX(), (int) square.getY(), (int) square.getWidth(), (int) square.getHeight());
+		g.fillOval((int) square.getX(), (int) square.getY(), (int) square.getWidth(), (int) square.getHeight());
 	}
 	
 	public static void main(String[] args) {
