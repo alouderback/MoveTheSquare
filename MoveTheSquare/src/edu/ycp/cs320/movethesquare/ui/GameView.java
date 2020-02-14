@@ -32,7 +32,7 @@ public class GameView extends JPanel {
 	public GameView(Game model) {
 		this.model = model;
 		setPreferredSize(new Dimension((int) model.getWidth()-5, (int)model.getHeight()-5));
-		setBackground(DARK_GREEN);
+		setBackground(Color.GREEN);
 
 		// djh2-KEC119-21: changed from 30 to 45
 		// djh2-YCPlaptop: change from 45 to 100
